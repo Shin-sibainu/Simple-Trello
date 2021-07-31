@@ -12,11 +12,11 @@ export const Header = () => {
             <nav classSLiName="pc-nav">
             <MemoryRouter>
                 <SUl>
-                    <SLi><SLink href="#">Contact</SLink></SLi>
-                    <SLi><SLink href="#">GitHub</SLink></SLi>
-                    <SLi><SLink href="#">Developer</SLink></SLi>
+                    <SLi><A href="#">Contact</A></SLi>
+                    <SLi><A href="https://github.com/Shin-sibainu">GitHub</A></SLi>
+                    <SLi><A href="https://twitter.com/Shin_Engineer">Twitter</A></SLi>
                 </SUl>
-                </MemoryRouter>
+            </MemoryRouter>
             </nav>
         </SHeader>
     );
@@ -26,7 +26,6 @@ const SHeader = styled.header`
     width: 100%;
     padding: 24px 40px;
     background-color: #d6cfcf;
-    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
@@ -39,6 +38,11 @@ const SH1 = styled.h1`
 `;
 
 const SLink = styled(Link)`
+    text-decoration: none;
+    color: #4b4b4b;
+`;
+
+const A = styled.a`
     text-decoration: none;
     color: #4b4b4b;
 `;
