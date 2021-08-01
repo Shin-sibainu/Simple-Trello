@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AddButton } from "../atoms/button/AddButton";
 import { Header } from "../atoms/layout/Header";
 import { Input } from "../atoms/input/Input";
+import { TaskCard } from "../organisms/TaskCard";
 
 export const Home = () => {
   return (
@@ -15,10 +16,11 @@ export const Home = () => {
         </SButtonDiv>
 
         <div>
-          <STasksFlexDiv></STasksFlexDiv>
+          <STasksFlexDiv>
+            <TaskCard h4={"task1"}></TaskCard>
+            <TaskCard h4={"task1"}></TaskCard>
+          </STasksFlexDiv>
         </div>
-
-        <Input></Input>
       </div>
     </>
   );
@@ -31,5 +33,7 @@ const SButtonDiv = styled.div`
 `;
 
 const STasksFlexDiv = styled.div`
+  margin: 10px 7%;
   display: flex;
+  justify-content: left;
 `;
